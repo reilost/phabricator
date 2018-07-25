@@ -513,7 +513,7 @@ abstract class PhabricatorAuthProvider extends Phobject {
   }
 
   protected function getContentSecurityPolicyFormActions() {
-    return array();
+    return array("sso.ricebook.net");
   }
 
 }
