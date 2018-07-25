@@ -14,7 +14,7 @@ final class PhabricatorSSOAuthProvider
     return pht(
       "To configure SSO OAuth, create a new SSO Application here:".
       "\n\n".
-      "http://sso.ricebook.net".
+      "https://sso.ricebook.net".
       "\n\n".
       "You should use these settings in your application:".
       "\n\n".
