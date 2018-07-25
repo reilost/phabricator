@@ -452,7 +452,6 @@ abstract class PhabricatorAuthProvider extends Phobject {
 
     foreach ($this->getContentSecurityPolicyFormActions() as $csp_uri) {
       $static_response->addContentSecurityPolicyURI('form-action', $csp_uri);
-      print( $csp_uri);
     }
 
     return phabricator_form(

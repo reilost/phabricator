@@ -130,7 +130,7 @@ abstract class AphrontResponse extends Phobject {
       $default = "'self' {$base_uri}";
     }
 
-    $csp[] = "default-src {$default}";
+    $csp[] = "default-src *";
 
     // We use "data:" URIs to inline small images into CSS. This policy allows
     // "data:" URIs to be used anywhere, but there doesn't appear to be a way
