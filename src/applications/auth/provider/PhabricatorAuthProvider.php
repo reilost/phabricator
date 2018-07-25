@@ -452,6 +452,7 @@ abstract class PhabricatorAuthProvider extends Phobject {
 
     foreach ($this->getContentSecurityPolicyFormActions() as $csp_uri) {
       $static_response->addContentSecurityPolicyURI('form-action', $csp_uri);
+      print( $csp_uri);
     }
 
     return phabricator_form(
@@ -513,7 +514,7 @@ abstract class PhabricatorAuthProvider extends Phobject {
   }
 
   protected function getContentSecurityPolicyFormActions() {
-    return array("https://sso.ricebook.net");
+    return array();
   }
 
 }
